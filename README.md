@@ -10,6 +10,8 @@ There are explanations of Data Structure (korean).
 
 ## Outline
 1. List  
+2. Stack  
+3. Queue  
 
 ## Contents
 
