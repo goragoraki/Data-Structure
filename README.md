@@ -1,4 +1,4 @@
-# Data Structure c++
+# Data Structure with c++
 The goal is to familiarize with using Data Structure.
 Understand the basic concepts of the Data Structure by making for the data structure.
 
@@ -33,3 +33,4 @@ Part 2. Sorted.
 
 * * *
 
+Referenced c++ plus data structures book
