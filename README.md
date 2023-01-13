@@ -1,6 +1,7 @@
 # Data Structure with c++
 The goal is to familiarize with using Data Structure.  
-Understand the basic concepts of the Data Structure by making for the data structure.  
+Understand the concepts of the Data Structure by **implementing data structures in STL**.  
+And Solve various problems through data structures implemented by myself.
 
 All code has comments(English).  
 See more details of code or data structure explanation, visit [my blog](https://hagisilecoding.tistory.com/category/CS/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0).  
