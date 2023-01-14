@@ -4,7 +4,7 @@ Understand the concepts of the Data Structure by **implementing data structures 
 And Solve various problems through data structures implemented by myself.
 
 All code has comments(English).  
-See more details of code or data structure explanation, visit [my blog](https://hagisilecoding.tistory.com/category/CS/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0).  
+See more details of code or data structure explanation, visit [my blog](https://hagisilecoding.tistory.com/category/CS/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%28Data%20Structure%29).  
 There are explanations of Data Structure (korean).
 
 *main.cpp is the file that uses each topic.
