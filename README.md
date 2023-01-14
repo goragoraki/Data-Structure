@@ -31,8 +31,15 @@ Part 2. Sorted.
 > sorted.cpp - Implementation file for SortedType class.  
 
 * * *
-### 2. 
-
+### 2. Stack
+Part 1. Stack with array
+> StackTType.h - Array versions of the Stack. Plus Template.  
+> main.cpp
+Part 2. Stack with pointer
+> StackDType.h - Pointer versions of the Stack. Plus Template.  
+Part 3. Linked Stack
+> StackType.cpp - linked versions of the Stack.
+> StackType.h
 
 
 * * *
