@@ -4,7 +4,7 @@ Understand the concepts of the Data Structure by **implementing data structures 
 And Solve various problems through data structures implemented by myself.
 
 All code has comments(English).  
-See more details of code or data structure explanation, visit [my blog](https://hagisilecoding.tistory.com/category/CS/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0).  
+See more details of code or data structure explanation, visit [my blog](https://hagisilecoding.tistory.com/category/CS/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%28Data%20Structure%29).  
 There are explanations of Data Structure (korean).
 
 *main.cpp is the file that uses each topic.
@@ -31,9 +31,29 @@ Part 2. Sorted.
 > sorted.cpp - Implementation file for SortedType class.  
 
 * * *
-### 2. 
+### 2. Stack  
+Part 1. Stack with static array  
+> StackTType.h - Static array versions of the Stack.(Template version)
+> main.cpp  
+> ![image](https://user-images.githubusercontent.com/89345673/212471580-78ca90d0-f53d-4e02-a2d3-09791f228ffa.png)  
+> Calculates the sum of the number of columns visible when viewed from the left.  
+  
+Part 2. Stack with dynamic array  
+> StackDType.h - dynamic array versions of the Stack.(Template version).  
+  
+Part 3. Linked Stack  
+> StackType.cpp - linked versions of the Stack.  
+> StackType.h  
+  
 
-
+* * *
+### 3. Queue  
+Part 1. Queue with dynamic array  
+> QueType.h - Dynamic array versions of the Queue.  
+> QueType.cpp  
+  
+Part 2. Linked Queue  
+> QueType.h - linked versions of the Queue(Template version). 
 
 * * *
 
