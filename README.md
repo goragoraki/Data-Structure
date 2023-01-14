@@ -32,19 +32,28 @@ Part 2. Sorted.
 
 * * *
 ### 2. Stack  
-Part 1. Stack with array  
-> StackTType.h - Array versions of the Stack. Plus Template.  
+Part 1. Stack with static array  
+> StackTType.h - Static array versions of the Stack.(Template version)
 > main.cpp  
 > ![image](https://user-images.githubusercontent.com/89345673/212471580-78ca90d0-f53d-4e02-a2d3-09791f228ffa.png)  
 > Calculates the sum of the number of columns visible when viewed from the left.  
   
-Part 2. Stack with pointer  
-> StackDType.h - Pointer versions of the Stack. Plus Template.  
+Part 2. Stack with dynamic array  
+> StackDType.h - dynamic array versions of the Stack.(Template version).  
   
 Part 3. Linked Stack  
 > StackType.cpp - linked versions of the Stack.  
 > StackType.h  
+  
 
+* * *
+### 3. Queue  
+Part 1. Queue with dynamic array  
+> QueType.h - Dynamic array versions of the Queue.  
+> QueType.cpp  
+  
+Part 2. Linked Queue  
+> QueType.h - linked versions of the Queue(Template version). 
 
 * * *
 
