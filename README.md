@@ -23,12 +23,14 @@ Part 1. unsorted List.
 > unsorted.cpp - Implementation file for UnsortedType class.  
 > unsorted.h - Specification file for UnsortedType class.  
 > main.cpp - If you enter a negative number, delete the same absolute value in the list.  
+> UnsortedType_Linked.h - Implementation file for Linked UnSorted List.  
   
 Part 2. Sorted.  
 > ItemType.h - Specification for items on the list.  
 > ItemType.cpp - Implementation file for items on the list.  
 > sorted.h - Specification file for SortedType class.  
 > sorted.cpp - Implementation file for SortedType class.  
+> SortedType_Linked.h - Implementation file for Linked Sorted List.  
 
 * * *
 ### 2. Stack  
