@@ -13,6 +13,7 @@ There are explanations of Data Structure (korean).
 1. List  
 2. Stack  
 3. Queue  
+4. Sort  
 
 ## Contents
 
@@ -58,5 +59,10 @@ Part 2. Linked Queue
 > QueType.h - linked versions of the Queue(Template version). 
 
 * * *
+### 4. Sort  
+> QuickSort.cpp - Divide-and-conquer algorithm that sorts an array by partitioning it into smaller sub-arrays and recursively sorting those sub-arrays.   
 
-Referenced c++ plus data structures book
+* * *
+
+Referenced c++ plus data structures book.  
+[My blog](https://hagisilecoding.tistory.com/category/CS/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%28Data%20Structure%29). 
