@@ -64,6 +64,12 @@ Part 2. Linked Queue
 > QuickSort.cpp - Divide-and-conquer algorithm that sorts an array by partitioning it into smaller sub-arrays and recursively sorting those sub-arrays.   
 
 * * *
+### 4. Sort  
+> BinarySearchTree.cpp - Binary Search Tree(dynamic version).     
+> BinarySearchTree.h  
+> QueType.cpp - For Traveling Tree.   
+> QueType.h  
 
+* * *
 Referenced c++ plus data structures book.  
 [My blog](https://hagisilecoding.tistory.com/category/CS/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%28Data%20Structure%29). 
