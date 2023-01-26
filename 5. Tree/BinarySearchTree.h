@@ -1,6 +1,7 @@
+#pragma once
 #include <string>
 #include <fstream>
-typedef char ItemType;
+typedef int ItemType;
 struct TreeNode;
 #include "QueType.h"
 enum OrderType {PRE_ORDER, IN_ORDER, POST_ORDER};
@@ -23,10 +24,6 @@ public:
   void GetNextItem (ItemType& item, OrderType order, 
        bool& finished);
   void Print(std::ofstream& outFile) const;
-  TreeNode* DeleteTr(TreeNode*& tree);
-  int NumberLf(TreeNode*& tree);
-  void DeleteTree();
-  int NumberLeaf();
 private:
   TreeNode* root;
   QueType preQue;

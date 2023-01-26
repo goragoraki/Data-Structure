@@ -1,4 +1,3 @@
-
 #include "TreeType.h"
 struct TreeNode
 {
@@ -23,6 +22,7 @@ bool TreeType::IsFull() const
     return true;
   }
 }
+
 bool TreeType::IsEmpty() const
 // Returns true if the tree is empty; false otherwise.
 {
@@ -40,7 +40,6 @@ int TreeType::LengthIs() const
 
 
 int CountNodes(TreeNode* tree)
-// Post: returns the number of nodes in the tree.
 {
   if (tree == NULL)
     return 0;
@@ -61,9 +60,6 @@ void TreeType::RetrieveItem(ItemType& item, bool& found)
 void Retrieve(TreeNode* tree, 
      ItemType& item, bool& found)
 // Recursively searches tree for item.
-// Post: If there is an element someItem whose key matches item's,
-//       found is true and item is set to a copy of someItem; 
-//       otherwise found is false and item is unchanged.
 {
   if (tree == NULL)
     found = false;                     // item is not found.
@@ -89,7 +85,6 @@ void TreeType::InsertItem(ItemType item)
 
 void Insert(TreeNode*& tree, ItemType item)
 // Inserts item into tree.
-// Post:  item is in tree; search property is maintained.
 {
   if (tree == NULL)
   {// Insertion place found.
@@ -112,11 +107,8 @@ void TreeType::DeleteItem(ItemType item)
 {
   Delete(root, item);
 }
-
-
 void Delete(TreeNode*& tree, ItemType item)
 // Deletes item from tree.
-// Post:  item is not in tree.
 {
   if (item < tree->info)
     Delete(tree->left, item);   // Look in left subtree.
@@ -130,11 +122,6 @@ void GetPredecessor(TreeNode* tree, ItemType& data);
 
 void DeleteNode(TreeNode*& tree)
 // Deletes the node pointed to by tree.
-// Post: The user's data in the node pointed to by tree is no 
-//       longer in the tree.  If tree is a leaf node or has only 
-//       non-NULL child pointer the node pointed to by tree is 
-//       deleted; otherwise, the user's data is replaced by its 
-//       logical predecessor and the predecessor's node is deleted.
 {
   ItemType data;
   TreeNode* tempPtr;
@@ -198,7 +185,6 @@ TreeType::~TreeType()
 
 
 void Destroy(TreeNode*& tree)
-// Post: tree is empty; nodes have been deallocated.
 {
   if (tree != NULL)
   {
@@ -214,9 +200,7 @@ void TreeType::MakeEmpty()
   root = NULL;
 }
 
-
-void CopyTree(TreeNode*& copy, 
-     const TreeNode* originalTree);
+void CopyTree(TreeNode*& copy, const TreeNode* originalTree);
 
 TreeType::TreeType(const TreeType& originalTree)
 // Calls recursive function CopyTree to copy originalTree 
@@ -225,23 +209,16 @@ TreeType::TreeType(const TreeType& originalTree)
   CopyTree(root, originalTree.root);
 }
 
-void TreeType::operator= 
-     (const TreeType& originalTree)
+void TreeType::operator= (const TreeType& originalTree)
 // Calls recursive function CopyTree to copy originalTree 
 // into root.
 {
-  {
   if (&originalTree == this)
     return;             // Ignore assigning self to self
   Destroy(root);      // Deallocate existing tree nodes
   CopyTree(root, originalTree.root);
-  }
-
 }
-void CopyTree(TreeNode*& copy, 
-     const TreeNode* originalTree)
-// Post: copy is the root of a tree that is a duplicate 
-//       of originalTree.
+void CopyTree(TreeNode*& copy, const TreeNode* originalTree)
 {
   if (originalTree == NULL)
     copy = NULL;
@@ -253,19 +230,17 @@ void CopyTree(TreeNode*& copy,
     CopyTree(copy->right, originalTree->right);
   }
 }
+
 // Function prototypes for auxiliary functions.
 
 void PreOrder(TreeNode*, QueType&);
 // Enqueues tree items in preorder.
 
-
 void InOrder(TreeNode*, QueType&);
 // Enqueues tree items in inorder.
 
-
 void PostOrder(TreeNode*, QueType&);
 // Enqueues tree items in postorder.
-
 
 void TreeType::ResetTree(OrderType order)
 // Calls function to create a queue of the tree elements in 
@@ -283,9 +258,7 @@ void TreeType::ResetTree(OrderType order)
 }
 
 
-void PreOrder(TreeNode* tree, 
-     QueType& preQue)
-// Post: preQue contains the tree items in preorder.
+void PreOrder(TreeNode* tree, QueType& preQue)
 {
   if (tree != NULL)
   {
@@ -296,9 +269,7 @@ void PreOrder(TreeNode* tree,
 }
 
 
-void InOrder(TreeNode* tree, 
-     QueType& inQue)
-// Post: inQue contains the tree items in inorder.
+void InOrder(TreeNode* tree, QueType& inQue)
 {
   if (tree != NULL)
   {
@@ -309,9 +280,7 @@ void InOrder(TreeNode* tree,
 }
 
 
-void PostOrder(TreeNode* tree, 
-     QueType& postQue)
-// Post: postQue contains the tree items in postorder.
+void PostOrder(TreeNode* tree, QueType& postQue)
 {
   if (tree != NULL)
   {
@@ -322,12 +291,8 @@ void PostOrder(TreeNode* tree,
 }
 
 
-void TreeType::GetNextItem(ItemType& item, 
-     OrderType order, bool& finished)
+void TreeType::GetNextItem(ItemType& item, OrderType order, bool& finished)
 // Returns the next item in the desired order.
-// Post: For the desired order, item is the next item in the queue.
-//       If item is the last one in the queue, finished is true; 
-//       otherwise finished is false.
 {
   finished = false;
   switch (order)
@@ -346,34 +311,6 @@ void TreeType::GetNextItem(ItemType& item,
                       break;
   }
 }
-TreeNode* TreeType::DeleteTr(TreeNode*& tree)
-{
-    if (tree->left != NULL)
-        DeleteTr(tree->left);
-    else
-    {
-        TreeNode* tempPtr = tree;
-        tree = tree->right;
-        return tempPtr;
-    }
-}
-int TreeType::NumberLf(TreeNode*& tree)
-{
-    if (tree == NULL)
-        return 0;
-    else if (tree->left == NULL && tree->right == NULL)
-        return 1;
-    else
-        return NumberLf(tree->left) + NumberLf(tree->right);
-}
-void TreeType::DeleteTree()
-{
-    TreeNode* tempPtr = DeleteTr(root);
-    delete tempPtr;
-}
-int TreeType::NumberLeaf()
-{
-    return NumberLf(root);
-}
+
 
 

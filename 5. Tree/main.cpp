@@ -1,25 +1,22 @@
 #include <iostream>
 #include "TreeType.h"
+#include "QueType.h"
 using namespace std;
-
-int main()
-{
+int main() {
+	ItemType node[] = { 5,3,7,1,4 };
 	TreeType tree;
-	int nodeNum;
-	int item;
-	cin >> nodeNum;
-	for (int i = 0; i < nodeNum; i++)
-	{
-		cin >> item;
-		tree.InsertItem(item);
+	for (int i = 0; i < 5; i++) {
+		tree.InsertItem(node[i]);
 	}
-	int cutNum;
-	cin >> cutNum;
-	for (int i = 0; i < cutNum; i++)
-	{
-		tree.DeleteTree();
-	}
-	cout << tree.NumberLeaf() << endl;
+	QueType q;
+	ItemType item;
+	bool finish = false;
+	tree.ResetTree(PRE_ORDER);
+	while (!finish) {
+		tree.GetNextItem(item, PRE_ORDER, finish);
+		cout << item << " ";
+	} 
 
+	
 	return 0;
 }

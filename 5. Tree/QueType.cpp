@@ -1,25 +1,19 @@
-#include <cstddef>                 // For NULL
-#include <new>                     // For bad_alloc
+#pragma once
+#include <cstddef>       // For NULL
+#include <new>           // For bad_alloc
 #include "QueType.h"
-
 struct NodeType
 {
   ItemType info;
   NodeType* next;
 };
 
-
-
-QueType::QueType()          // Class constructor.
-// Post:  front and rear are set to NULL.
+QueType::QueType()// Class constructor.
 {
   front = NULL;
   rear = NULL;
 }
-
-
 void QueType::MakeEmpty()
-// Post: Queue is empty; all elements have been deallocated.
 {
   NodeType* tempPtr;
 
@@ -32,7 +26,7 @@ void QueType::MakeEmpty()
   rear = NULL;
 }
 
-          // Class destructor.
+// Class destructor.
 QueType::~QueType()
 {
   MakeEmpty();
@@ -66,10 +60,6 @@ bool QueType::IsEmpty() const
 
 void QueType::Enqueue(ItemType newItem)
 // Adds newItem to the rear of the queue.
-// Pre:  Queue has been initialized.
-// Post: If (queue is not full) newItem is at the rear of the queue;
-//       otherwise a FullQueue exception is thrown.  
-
 {
   if (IsFull())
     throw FullQueue();
@@ -91,10 +81,6 @@ void QueType::Enqueue(ItemType newItem)
 
 void QueType::Dequeue(ItemType& item)
 // Removes front item from the queue and returns it in item.
-// Pre:  Queue has been initialized and is not empty.
-// Post: If (queue is not empty) the front of the queue has been 
-//       removed and a copy returned in item; 
-//       othersiwe a EmptyQueue exception has been thrown.
 {
   if (IsEmpty())
     throw EmptyQueue();
@@ -111,8 +97,7 @@ void QueType::Dequeue(ItemType& item)
   }
 }
 
-QueType::QueType
-  (const QueType& anotherQue)
+QueType::QueType(const QueType& anotherQue)
 {
   NodeType* ptr1;
   NodeType* ptr2;
