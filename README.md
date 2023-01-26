@@ -69,6 +69,7 @@ Part 2. Linked Queue
 > BinarySearchTree.h  
 > QueType.cpp - For Traveling Tree.   
 > QueType.h  
+> main.cpp - Traveling Tree by using Pre-order.  
 
 * * *
 Referenced c++ plus data structures book.  
