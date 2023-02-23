@@ -72,5 +72,13 @@ Part 2. Linked Queue
 > main.cpp - Traveling Tree by using Pre-order.  
 
 * * *
+### 6. Heap  
+> Max_Heap.cpp - Max heap with array.     
+> Changed_Heap.cpp  
+-The problem of picking the 10 highest priority users given their IDs and properties.  
+-The larger the property, the higher the priority, and if the properties are the same, the user with the smaller id has      the higher priority.  
+-IDs are given in sequentially increasing order.  
+
+* * *
 Referenced c++ plus data structures book.  
 [My blog](https://hagisilecoding.tistory.com/category/CS/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%28Data%20Structure%29). 
