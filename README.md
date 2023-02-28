@@ -83,6 +83,10 @@ Part 2. Linked Queue
 > segment_tree.cpp - Find the sum of segments.       
 > segment_tree_max_min.cpp - find the maximum and minimum values in a segment.  
 
+### 8. Trie -> [Details](https://hagisilecoding.tistory.com/154)  
+> trie.cpp - Basic trie tree(insert, remove, find string).         
+> trie2.cpp - Find substring at kth occurrence.    
+
 * * *
 Referenced c++ plus data structures book.  
 [My blog](https://hagisilecoding.tistory.com/category/CS/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%28Data%20Structure%29). 
